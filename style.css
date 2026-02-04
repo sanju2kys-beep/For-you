@@ -1,209 +1,201 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2867
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+body{
+  margin:0;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(120deg,#0b1020,#2a0f2f);
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color:white;
+}
 
-\f0\fs24 \cf0 body\{\
-  margin:0;\
-  min-height:100vh;\
-  display:flex;\
-  justify-content:center;\
-  align-items:center;\
-  background: linear-gradient(120deg,#0b1020,#2a0f2f);\
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;\
-  color:white;\
-\}\
-\
-.card\{\
-  background: rgba(255,255,255,.08);\
-  border-radius:20px;\
-  padding:24px;\
-  width:min(420px,90%);\
-  text-align:center;\
-\}\
-\
-input\{\
-  width:100%;\
-  padding:12px;\
-  border-radius:14px;\
-  border:none;\
-  margin-top:12px;\
-\}\
-\
-button\{\
-  margin-top:14px;\
-  padding:12px 16px;\
-  border-radius:14px;\
-  border:none;\
-  background: #ff4d8d;\
-  color:white;\
-  font-weight:700;\
-\}\
-\
-.small\{opacity:.7;font-size:13px\}\
-.heart\{font-size:42px\}\
-.fade\{\
-  animation: fadeIn .6s ease;\
-\}\
-\
-@keyframes fadeIn\{\
-  from\{opacity:0; transform: translateY(10px)\}\
-  to\{opacity:1; transform:none\}\
-\}\
-\
-.letter\{\
-  text-align:left;\
-  line-height:1.8;\
-  white-space:pre-line;\
-  font-size:16px;\
-\}\
-\
-.center\{\
-  text-align:center;\
-\}\
-\
-.heart-btn\{\
-  margin-top:18px;\
-  font-size:36px;\
-  background:none;\
-  border:none;\
-  cursor:pointer;\
-  animation: pulse 1.5s infinite;\
-\}\
-\
-@keyframes pulse\{\
-  0%\{transform:scale(1)\}\
-  50%\{transform:scale(1.15)\}\
-  100%\{transform:scale(1)\}\
-\}\
-.topRow h1\{ margin-bottom:6px; \}\
-.grid4\{\
-  display:grid;\
-  grid-template-columns: repeat(2, minmax(0, 1fr));\
-  gap:14px;\
-  margin-top:14px;\
-\}\
-\
-.box\{\
-  text-align:left;\
-  padding:16px;\
-  border-radius:18px;\
-  border:1px solid rgba(255,255,255,.14);\
-  background: rgba(255,255,255,.06);\
-  color:white;\
-  cursor:pointer;\
-  transition: transform .12s ease, border-color .12s ease;\
-\}\
-\
-.box:hover\{\
-  transform: translateY(-2px);\
-  border-color: rgba(255,255,255,.28);\
-\}\
-\
-.boxTitle\{\
-  font-weight:800;\
-  font-size:18px;\
-  margin-bottom:6px;\
-\}\
-\
-.boxSub\{\
-  font-size:13px;\
-  opacity:.75;\
-  line-height:1.4;\
-\}\
-\
-@media (max-width:520px)\{\
-  .grid4\{ grid-template-columns: 1fr; \}\
-\}\
-.grid3\{\
-  display:grid;\
-  grid-template-columns: repeat(3, minmax(0, 1fr));\
-  gap:14px;\
-  margin-top:14px;\
-\}\
-\
-@media (max-width:720px)\{\
-  .grid3\{ grid-template-columns: 1fr; \}\
-\}\
-\
-.row\{\
-  display:flex;\
-  gap:10px;\
-  flex-wrap:wrap;\
-  align-items:center;\
-  margin-top:12px;\
-\}\
-\
-.label\{\
-  font-size:13px;\
-  opacity:.75;\
-\}\
-\
-textarea\{\
-  width:100%;\
-  min-height:96px;\
-  padding:12px;\
-  border-radius:14px;\
-  border:1px solid rgba(255,255,255,.14);\
-  background: rgba(255,255,255,.05);\
-  color: white;\
-  outline:none;\
-  resize: vertical;\
-\}\
-\
-.previewGrid\{\
-  display:grid;\
-  grid-template-columns: repeat(2, minmax(0, 1fr));\
-  gap:12px;\
-  margin-top:12px;\
-\}\
-@media (max-width:520px)\{\
-  .previewGrid\{ grid-template-columns: 1fr; \}\
-\}\
-\
-.photoCard\{\
-  border:1px solid rgba(255,255,255,.14);\
-  border-radius:18px;\
-  background: rgba(0,0,0,.12);\
-  padding:12px;\
-\}\
-\
-.imgWrap\{\
-  width:100%;\
-  aspect-ratio: 4/3;\
-  border-radius:14px;\
-  overflow:hidden;\
-  border:1px solid rgba(255,255,255,.12);\
-  background: rgba(255,255,255,.04);\
-  display:flex;\
-  align-items:center;\
-  justify-content:center;\
-  color: rgba(255,255,255,.55);\
-  font-size:13px;\
-\}\
-\
-.imgWrap img\{\
-  width:100%;\
-  height:100%;\
-  object-fit: cover;\
-\}\
-\
-.copyBox\{\
-  margin-top:12px;\
-  padding:14px;\
-  border-radius:18px;\
-  border:1px dashed rgba(255,255,255,.25);\
-  background: rgba(255,255,255,.04);\
-  white-space: pre-wrap;\
-  line-height:1.7;\
-\}\
-\
-canvas\{\
-  width:100%;\
-  border-radius:18px;\
-  border:1px solid rgba(255,255,255,.14);\
-  background: rgba(255,255,255,.04);\
-\}\
+.card{
+  background: rgba(255,255,255,.08);
+  border-radius:20px;
+  padding:24px;
+  width:min(420px,90%);
+  text-align:center;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  border-radius:14px;
+  border:none;
+  margin-top:12px;
+}
+
+button{
+  margin-top:14px;
+  padding:12px 16px;
+  border-radius:14px;
+  border:none;
+  background: #ff4d8d;
+  color:white;
+  font-weight:700;
+}
+
+.small{opacity:.7;font-size:13px}
+.heart{font-size:42px}
+.fade{
+  animation: fadeIn .6s ease;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform: translateY(10px)}
+  to{opacity:1; transform:none}
+}
+
+.letter{
+  text-align:left;
+  line-height:1.8;
+  white-space:pre-line;
+  font-size:16px;
+}
+
+.center{
+  text-align:center;
+}
+
+.heart-btn{
+  margin-top:18px;
+  font-size:36px;
+  background:none;
+  border:none;
+  cursor:pointer;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.15)}
+  100%{transform:scale(1)}
+}
+.topRow h1{ margin-bottom:6px; }
+.grid4{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:14px;
+  margin-top:14px;
+}
+
+.box{
+  text-align:left;
+  padding:16px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.06);
+  color:white;
+  cursor:pointer;
+  transition: transform .12s ease, border-color .12s ease;
+}
+
+.box:hover{
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,.28);
+}
+
+.boxTitle{
+  font-weight:800;
+  font-size:18px;
+  margin-bottom:6px;
+}
+
+.boxSub{
+  font-size:13px;
+  opacity:.75;
+  line-height:1.4;
+}
+
+@media (max-width:520px){
+  .grid4{ grid-template-columns: 1fr; }
+}
+.grid3{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap:14px;
+  margin-top:14px;
+}
+
+@media (max-width:720px){
+  .grid3{ grid-template-columns: 1fr; }
+}
+
+.row{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+  margin-top:12px;
+}
+
+.label{
+  font-size:13px;
+  opacity:.75;
+}
+
+textarea{
+  width:100%;
+  min-height:96px;
+  padding:12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.05);
+  color: white;
+  outline:none;
+  resize: vertical;
+}
+
+.previewGrid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:12px;
+  margin-top:12px;
+}
+@media (max-width:520px){
+  .previewGrid{ grid-template-columns: 1fr; }
+}
+
+.photoCard{
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:18px;
+  background: rgba(0,0,0,.12);
+  padding:12px;
+}
+
+.imgWrap{
+  width:100%;
+  aspect-ratio: 4/3;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.04);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color: rgba(255,255,255,.55);
+  font-size:13px;
+}
+
+.imgWrap img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.copyBox{
+  margin-top:12px;
+  padding:14px;
+  border-radius:18px;
+  border:1px dashed rgba(255,255,255,.25);
+  background: rgba(255,255,255,.04);
+  white-space: pre-wrap;
+  line-height:1.7;
+}
+
+canvas{
+  width:100%;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.04);
 }
