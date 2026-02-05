@@ -2,6 +2,17 @@
    FULL WORKING JS (Opening → Letter → Menu → Memory Lane → Quiz → Photo Booth → Ending)
    Paste this ENTIRE file into CodePen JS panel.
    ========================================================= */
+const app = document.getElementById("app");
+
+// GLOBAL STATE (required)
+const state = {
+  name: "",
+};
+
+// everything else stays the same ↓↓↓
+function renderOpening() {
+  ...
+}
 
 
 /* =======================
