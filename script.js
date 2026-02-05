@@ -2,25 +2,7 @@
    FULL WORKING JS (Opening → Letter → Menu → Memory Lane → Quiz → Photo Booth → Ending)
    Paste this ENTIRE file into CodePen JS panel.
    ========================================================= */
-/* =======================
-   PASSWORD PROTECTION
-   ======================= */
 
-// CHANGE THIS PASSWORD 👇
-const SITE_PASSWORD = "ishitha"; // example
-
-(function passwordGate(){
-  const saved = sessionStorage.getItem("siteUnlocked");
-  if (saved === "yes") return;
-
-  const input = prompt("💗 Enter the secret password");
-  if (input === SITE_PASSWORD) {
-    sessionStorage.setItem("siteUnlocked", "yes");
-  } else {
-    alert("Oops 😌 that’s not it. Try again.");
-    passwordGate();
-  }
-})();
 
 /* =======================
    IMAGES (Google Drive IDs)
