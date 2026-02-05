@@ -667,3 +667,13 @@ function escapeHtml(str) {
    BOOT
    ======================= */
 renderOpening();
+
+Object.assign(window, {
+  renderOpening,
+  goToLetter,
+  renderMenu,
+  renderMemoryLane,
+  renderQuiz,
+  renderPhotoBooth,
+  renderEnding
+});
