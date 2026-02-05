@@ -650,7 +650,6 @@ In every version of my life. 💗
     </div>
   `;
 }
-
 /* =======================
    HELPERS
    ======================= */
@@ -664,10 +663,8 @@ function escapeHtml(str) {
 }
 
 /* =======================
-   BOOT
+   EXPOSE FUNCTIONS (IMPORTANT)
    ======================= */
-renderOpening();
-
 Object.assign(window, {
   renderOpening,
   goToLetter,
@@ -677,3 +674,8 @@ Object.assign(window, {
   renderPhotoBooth,
   renderEnding
 });
+
+/* =======================
+   BOOT
+   ======================= */
+renderOpening();
